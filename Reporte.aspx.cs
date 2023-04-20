@@ -51,10 +51,18 @@ namespace Laboratorio8
 
         private void CrearReporte()
         {
+            //recorre todas las inscripciones
             for (int i = 0; i < inscripciones.Count; i++)
             {
+                //por cada inscripcion recorre todos los ciudadanos
+                //para buscar el dpi de la inscripcion a que ciudadano
+                //corresponde y obtener su nombre
                 for (int j = 0; j < ciudadanos.Count; j++)
                 {
+                    //si el dpi de las inscripciones es igual al dpi
+                    //de ciudadadano obtiene el nombre del ciudadano
+                    //y copia el nombre del partido y lo guarda
+                    //en una lista llamada reporte
                     if (inscripciones[i].Dpi == ciudadanos[j].Dpi)
                     {
                         Reporte reporte = new Reporte();
@@ -73,6 +81,9 @@ namespace Laboratorio8
 
         protected void ButtonReporte_Click(object sender, EventArgs e)
         {
+            //hay que leer todos los datos en cada acción pues en las
+            //páginas web en cada acción la página se recarga de nuevo
+            //y los datos anteriores se pierde
             LeerCiudadanos();
             LeerInscripciones();
             CrearReporte();
@@ -83,6 +94,9 @@ namespace Laboratorio8
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            //hay que leer todos los datos en cada acción pues en las
+            //páginas web en cada acción la página se recarga de nuevo
+            //y los datos anteriores se pierde
             LeerCiudadanos();
             LeerInscripciones();
             CrearReporte();
@@ -92,6 +106,9 @@ namespace Laboratorio8
 
         protected void ButtonTotal_Click(object sender, EventArgs e)
         {
+            //hay que leer todos los datos en cada acción pues en las
+            //páginas web en cada acción la página se recarga de nuevo
+            //y los datos anteriores se pierde
             LeerCiudadanos();
             LeerInscripciones();
             CrearReporte();

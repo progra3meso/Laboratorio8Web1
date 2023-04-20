@@ -31,6 +31,9 @@ namespace Laboratorio8
                     ciudadanos.Add(ciudadano);
                 }
 
+                //le indica al dropdowlist que dato mostrar en pantalla
+                //y que datos seleccionar al dar clic
+                //en este caso muestra el nombre pero selecciona el dpi
                 DropDownListCiudadano.DataValueField = "DPI";
                 DropDownListCiudadano.DataTextField = "Nombre";
 
