@@ -89,5 +89,13 @@ namespace Laboratorio8
             GridView1.DataSource = reportes.OrderByDescending(p => p.Partido);
             GridView1.DataBind();
         }
+
+        protected void ButtonTotal_Click(object sender, EventArgs e)
+        {
+            LeerCiudadanos();
+            LeerInscripciones();
+            CrearReporte();
+            LabelTotal.Text = reportes.Count().ToString();
+        }
     }
 }

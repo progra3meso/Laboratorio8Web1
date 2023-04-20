@@ -24,6 +24,15 @@ namespace Laboratorio8
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
+        /// Control LabelTotal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelTotal;
+
+        /// <summary>
         /// Control ButtonReporte.
         /// </summary>
         /// <remarks>
@@ -40,5 +49,14 @@ namespace Laboratorio8
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
+        /// Control ButtonTotal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonTotal;
     }
 }
